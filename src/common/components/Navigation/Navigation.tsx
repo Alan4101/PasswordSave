@@ -1,15 +1,28 @@
-import { FC } from "react";
-import MenuList from '@mui/material/MenuList';
-import MenuItem from '@mui/material/MenuItem';
-import ListItemText from '@mui/material/ListItemText';
+import { FC, useState } from 'react';
+import { List } from '@mui/material';
+import { NavBox } from './Navigation.style';
+import { menuItems, useStylesList } from './Navigation.helper';
+import { MenuItem } from './MenuItems/MenuItem';
 
-export const Navigation:FC = () => {
-    return(
-        <MenuList>
-            <MenuItem>
-                <ListItemText>cut</ListItemText>
-            </MenuItem>
-        </MenuList>
-        
-    )
-}
+export const Navigation: FC = () => {
+  const [isAuth, setIsAuth] = useState<boolean>(true);
+  const classes = useStylesList();
+
+  const renderItems = () => {
+    if (isAuth) {
+      return menuItems.map((item) => (
+        <MenuItem key={item.route} item={item} itemClikHandler={() => console.log(item.text)} />
+      ));
+    } else {
+      return menuItems
+        .filter((item) => !item.isPrivateRoute)
+        .map((item) => <MenuItem key={item.route} item={item} itemClikHandler={() => console.log(item.text)} />);
+    }
+  };
+
+  return (
+    <NavBox>
+      <List className={classes.root}>{renderItems()}</List>
+    </NavBox>
+  );
+};

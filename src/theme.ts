@@ -3,19 +3,20 @@ import { PaletteOptions, Components } from '@mui/material/styles';
 const palette: PaletteOptions ={
     primary:{
         main: '#2D5AF0',
-    dark: '#163EC0',
-    light: '#6A8DFF',
-    contrastText: '#fff',
+    dark: '#087f23',
+    light: '#80e27e',
+    contrastText: '#000000',
     },
     secondary:{
-        main: '#FFB515',
-        dark: '#E5A417',
-        light: '#FFDF99',
+        main: '#f44336',
+        dark: '#ba000d',
+        light: '#ff7961',
         contrastText: '#8F94B6',
     },
     background: {
-        default: '#FEFEFC',
+        default: '#087f23',
         paper: '#fff',
+
       },
 }
 const typography = {
