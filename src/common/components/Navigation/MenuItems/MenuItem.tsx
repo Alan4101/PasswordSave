@@ -18,7 +18,6 @@ export const MenuItem: FC<MenuItemProps> = ({ item, itemClikHandler }) => {
   });
   useEffect(() => {
     setIsActiveItem(checkIsActiveItem(pathname, item.route));
-    console.log(isActiveItem)
   }, [pathname, item]);
   const onClickItemHandler = () => {
     itemClikHandler();
