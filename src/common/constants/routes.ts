@@ -1,5 +1,5 @@
 export enum WebsiteRoutes {
-    Home = '/home',
+    Home = '/',
     About = '/about',
     Passwords = '/passwords',
     LogIn = '/login',
