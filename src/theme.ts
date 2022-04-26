@@ -1,11 +1,12 @@
 import { createTheme } from '@mui/material';
 import { PaletteOptions, Components } from '@mui/material/styles';
+
 const palette: PaletteOptions ={
     primary:{
-        main: '#2D5AF0',
-    dark: '#087f23',
-    light: '#80e27e',
-    contrastText: '#000000',
+      main: '#2D5AF0',
+      dark: '#087f23',
+      light: '#80e27e',
+      contrastText: '#000000',
     },
     secondary:{
         main: '#f44336',

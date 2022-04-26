@@ -3,6 +3,7 @@ export enum WebsiteRoutes {
     About = '/about',
     Passwords = '/passwords',
     LogIn = '/login',
-    Registration = '/registration'
+    Registration = '/registration',
+    LogOut = '/logout'
 
 }
