@@ -8,9 +8,11 @@ export const HeaderContainer = styled.div`
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: start;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 `;
-export const HeaderBox = styled.div``;
+export const HeaderBox = styled.div`
+  width: 100%;
+`;

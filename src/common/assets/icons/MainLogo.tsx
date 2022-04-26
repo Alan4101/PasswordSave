@@ -2,7 +2,7 @@ import { FC } from "react";
 
 export const MainLogo: FC = () => (
     <svg
-    
+    fill="#fff"
     width="50px"
     height="50px"
     viewBox="0 0 24 24"
