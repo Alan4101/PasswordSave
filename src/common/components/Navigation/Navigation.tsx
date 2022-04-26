@@ -5,7 +5,7 @@ import { authMenu, IMenuItem, ListMenu, menuItems} from './Navigation.helper';
 import { MenuItem } from './MenuItems/MenuItem';
 
 export const Navigation: FC = () => {
-  const [isAuth, setIsAuth] = useState<boolean>(true);
+  const [isAuth, setIsAuth] = useState<boolean>(false);
   // const classes = useStylesList();
 
   const renderMenuItems = (arr: Array<IMenuItem>) => {

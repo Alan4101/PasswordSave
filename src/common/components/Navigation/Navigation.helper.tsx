@@ -5,7 +5,6 @@ import { Theme, List ,ListProps , styled} from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import LoginIcon from '@mui/icons-material/Login';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-// import { styled } from '@mui/material/styles';
 
 export const checkIsActiveItem = (pathname: string, route: string): boolean => {
   return pathname.indexOf(route) === 0;
@@ -23,8 +22,6 @@ export interface IMenuItem extends IMenu {
   notification?: number;
   isSubMenu?: subMenuItem[];
 }
-
-
 export const authMenu: IMenuItem[] = [
   {
     icon: <AccountCircleIcon/>,
@@ -102,5 +99,4 @@ export const ListMenu = styled(List)<ListProps>(({theme})=>({
     flexDirection: 'row',
     justifyContent: "center",
     width: "100%",
-   
 }))
